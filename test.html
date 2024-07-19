@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>redirect 페이지</title>
+  </head>
+  <body>
+    <script>
+        var currentUrl = window.location.href;
+        // ? 이후의 쿼리 문자열 가져오기
+        var queryString = currentUrl.substring(currentUrl.indexOf('?') + 1);
+        window.location.href = 'https://script.google.com/a/macros/bangahgol.or.kr/s/AKfycbziGpyuWCkcxHFTaK_QwY1atPfIaukxWYh3ARphQPI/dev?' + queryString;
+    </script>
+  </body>
+</html>
